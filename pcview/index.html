@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>電子掲示板</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- 左側: 掲示板一覧 -->
+        <div id="bbslist">掲示板一覧</div>
+        
+        <!-- 右側: スレッドと新しい投稿 -->
+        <div id="bbs">
+            <!-- 上部: スレッド一覧と新しい投稿 -->
+            <div id="list">
+                <div id="threadlist">スレッド一覧</div>
+                <div id="newposts">新しい投稿</div>
+            </div>
+
+            <!-- タブ表示 -->
+            <div id="thread-tabs"></div>
+            
+            <!-- 下部: 各スレッドの内容 -->
+            <div id="thread">
+                <div id="thread-contents">
+                    <div id="reload-button" class="overlay-button">⟳</div>
+                    <button id="scrollToBottomBtn" class="scroll-to-bottom">⬇︎</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
